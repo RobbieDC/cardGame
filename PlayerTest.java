@@ -9,7 +9,7 @@ public class PlayerTest {
 
   @Before
   public void before() {
-    player = new Player( "Cardy McCardface", 0 );
+    player = new Player( "Cardy McCardface");
     deck = new Deck();
   }
 

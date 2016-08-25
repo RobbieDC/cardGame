@@ -9,8 +9,11 @@ public enum Suit {
 
   private String suit;
 
-  private Suit( String suuit ) {
+  private Suit( String suit ) {
     this.suit = suit;
   }
 
+  public String getSuit(){
+    return this.suit;
+  }
 }

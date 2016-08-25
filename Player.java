@@ -6,17 +6,18 @@ public class Player {
   private String name;
   private int score;
 
-  public Player( String name, int score ) {
+  public Player( String name) {
     // this.hand = new ArrayList<Card>();
     this.hand = new Hand();
     this.name = name;
-    this.score = 0;
   }
 
   public String getName() {
     return this.name;
   }
 
+
+  //To be abstracted
   public String playTurn() {
     return "turn played";
   }
@@ -28,5 +29,4 @@ public class Player {
   public void getCardFromDeck(Deck deck, int num) {
     deck.dealCards(hand.getHand(), num);
   }
-
 }
