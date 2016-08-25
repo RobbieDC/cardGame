@@ -23,7 +23,7 @@ public class Deck{
   public void shuffle(){
     Collections.shuffle(deck);
   }
-
+  
   public void dealCards(ArrayList<Card> hand, int num){
     for (int i = 0 ; i < num; i++){
       hand.add(deck.remove(0));
